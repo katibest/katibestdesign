@@ -22,6 +22,29 @@
       }
     </script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dropdown styles */
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-5px);
+            transition: all 0.2s ease;
+            pointer-events: none;
+        }
+        .group:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .dropdown-item {
+            transition: all 0.15s ease;
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            transform: translateX(2px);
+        }
+    </style>
 </head>
 <body class="bg-palemint font-sans">
   <!-- Header/Navbar -->
@@ -30,20 +53,20 @@
       <a href="index.html" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
       <ul class="flex space-x-8 text-lg font-medium">
         <li class="relative group">
-          <button class="text-gray-700 hover:text-periwinkle flex items-center">
+          <button class="text-gray-700 hover:text-periwinkle flex items-center transition-colors duration-150">
             Projects
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
-          <ul class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block">
-            <li><a href="projects/engagewit.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">EngageWIT</a></li>
-            <li><a href="projects/family-nurturing-center.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Family Nurturing Center</a></li>
-            <li><a href="projects/patient-reach-360.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Patient Reach 360</a></li>
-            <li><a href="projects/other-project.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Other Project</a></li>
+          <ul class="dropdown-menu absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-sm py-1.5">
+            <li><a href="projects/engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
+            <li><a href="projects/family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
+            <li><a href="projects/patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
+            <li><a href="projects/other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Other Project</a></li>
           </ul>
         </li>
-        <li><a href="#contact" class="text-gray-700 hover:text-periwinkle">Contact</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">Contact</a></li>
       </ul>
     </nav>
   </header>

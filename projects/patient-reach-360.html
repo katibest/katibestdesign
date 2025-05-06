@@ -53,52 +53,11 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
-        /* Dropdown styles */
-        .dropdown-menu {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-5px);
-            transition: all 0.2s ease;
-        }
-        .group:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .dropdown-item {
-            transition: all 0.15s ease;
-        }
-        .dropdown-item:hover {
-            background-color: #f8f9fa;
-            transform: translateX(2px);
-        }
     </style>
 </head>
 <body class="bg-palemint font-sans">
-    <!-- Header/Navbar -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../index.html" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
-            <ul class="flex space-x-8 text-lg font-medium">
-                <li class="relative group">
-                    <button class="text-gray-700 hover:text-periwinkle flex items-center transition-colors duration-150">
-                        Projects
-                        <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-sm py-1.5">
-                        <li><a href="engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
-                        <li><a href="family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
-                        <li><a href="patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
-                        <li><a href="other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Other Project</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html#about" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">About Me</a></li>
-                <li><a href="../index.html#contact" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation placeholder -->
+    <div id="nav-placeholder"></div>
 
     <main>
         <!-- Project Hero Section -->
@@ -107,7 +66,7 @@
                 <div class="max-w-5xl mx-auto text-center">
                     <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Patient Reach 360</h1>
                     <div class="rounded-2xl overflow-hidden">
-                        <img src="../images/PR360-top-image.png" alt="Patient Reach 360 Project" class="w-full">
+                        <img src="../images/Engagewit-image.png" alt="Patient Reach 360 Project" class="w-full">
                     </div>
                 </div>
             </div>
@@ -166,13 +125,13 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                         <!-- Top row - 3 images -->
                         <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process1.jpg" alt="Process Step 1" class="w-full h-full object-cover">
+                            <img src="../images/process1teched.jpg" alt="Process Step 1" class="w-full h-full object-cover">
                         </div>
                         <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process2.jpg" alt="Process Step 2" class="w-full h-full object-cover">
+                            <img src="../images/process2teched.jpg" alt="Process Step 2" class="w-full h-full object-cover">
                         </div>
                         <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process3.jpg" alt="Process Step 3" class="w-full h-full object-cover">
+                            <img src="../images/process3teched.jpg" alt="Process Step 3" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <!-- Bottom row - Scrollable gallery -->
@@ -180,10 +139,16 @@
                         <div class="overflow-x-auto pb-4 scrollbar-hide">
                             <div class="flex space-x-8 min-w-max">
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/process4.jpg" alt="Process Step 4" class="w-full h-full object-contain">
+                                    <img src="../images/teched1.png" alt="Process Step 4" class="w-full h-full object-contain">
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/process5.jpg" alt="Process Step 5" class="w-full h-full object-contain">
+                                    <img src="../images/teched2.png" alt="Process Step 5" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched3.png" alt="Process Step 6" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched4.png" alt="Process Step 7" class="w-full h-full object-contain">
                                 </div>
                             </div>
                         </div>
@@ -226,6 +191,7 @@
         </div>
     </footer>
 
+    <script src="../js/include-nav.js"></script>
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
