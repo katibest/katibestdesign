@@ -4,4 +4,10 @@
 
 /* This file is for your main application CSS */
 
-/* Add your custom styles here */ 
+/* Add your custom styles here */
+#rotating-text {
+  transition: opacity 0.5s ease-in-out;
+  display: inline-block;
+  min-width: 120px; /* Fixed width for the text container */
+  text-align: center;
+} 

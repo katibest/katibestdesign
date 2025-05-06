@@ -10,8 +10,8 @@
           extend: {
             colors: {
               palemint: '#d3e7e2',
-              periwinkle: '#8d95d3',
-              goldpeach: '#f6ce8a',
+              periwinkle: '#6B74B3',
+              goldpeach: '#D4A76A',
             },
             fontFamily: {
               sans: ['Open Sans', 'ui-sans-serif', 'system-ui'],
@@ -43,7 +43,9 @@
           <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Hello, I'm Kati Best</h1>
             <div class="w-16 h-1 bg-white mx-auto md:mx-0 mb-6 rounded-full"></div>
-            <span class="inline-block bg-goldpeach text-white px-10 py-4 rounded-full font-semibold text-xl mb-6 min-w-[180px] text-center font-sans">Mentor</span>
+            <div class="inline-block bg-goldpeach text-white px-10 py-4 rounded-full font-semibold text-xl mb-6 min-w-[180px] text-center font-sans">
+              <span id="rotating-text">Mentor</span>
+            </div>
             <p class="text-white text-lg max-w-md mx-auto md:mx-0 font-sans">I'm Kati (aka the person behind the computer)! I've been product designer for almost ten years, creating designs that are not only pleasing to the eye but with thoughtful user experience.</p>
           </div>
           <div class="md:w-1/2 flex justify-center">
@@ -59,13 +61,13 @@
     <!-- About Section -->
     <section id="about" class="bg-white py-12">
       <div class="container mx-auto px-4">
-        <p class="text-gray-700 text-base md:text-lg max-w-3xl mx-auto font-sans">Throughout my career, I've had the privilege of working on a wide range of projects, from innovative start-ups to established enterprises. My design philosophy centers on the user—I strive to create solutions that truly meet their needs and deliver meaningful experiences. With a highly adaptable approach and a track record of leading projects to success, I thrive on collaborating with teams to turn complex ideas into intuitive, impactful designs.</p>
+        <p class="text-gray-700 text-base md:text-lg max-w-5xl mx-auto font-sans">Throughout my career, I've had the privilege of working on a wide range of projects, from innovative start-ups to established enterprises. My design philosophy centers on the user—I strive to create solutions that truly meet their needs and deliver meaningful experiences. With a highly adaptable approach and a track record of leading projects to success, I thrive on collaborating with teams to turn complex ideas into intuitive, impactful designs.</p>
       </div>
     </section>
     <!-- Projects Section -->
     <section class="bg-palemint py-16">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-periwinkle mb-8 text-center font-poppins">Latest Projects</h2>
           <div class="flex overflow-x-auto gap-8 max-w-full scrollbar-hide pb-4">
             <a href="/projects/engagewit" class="bg-white rounded-2xl shadow p-6 flex-shrink-0 w-80 flex flex-col items-start hover:shadow-lg transition">
@@ -100,7 +102,7 @@
     <!-- Experience Section -->
     <section class="bg-white py-16">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-periwinkle mb-8 font-poppins">Experience</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ul class="text-gray-700 space-y-2 font-sans">
@@ -121,7 +123,7 @@
     <!-- Meet the Team Section -->
     <section class="bg-periwinkle py-16">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-white mb-2 font-poppins">Meet the team</h2>
           <p class="text-white mb-8 font-sans">CINCINNATI OFFICE AKA MY HOME</p>
           <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
@@ -148,7 +150,7 @@
     <!-- Reviews Section -->
     <section class="bg-white py-16">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <div class="flex flex-col items-center">
             <div class="bg-palemint rounded-2xl p-8 shadow-lg max-w-xl w-full mb-8">
               <p class="text-periwinkle font-semibold mb-2 font-sans">The clickable prototype has received positive feedback from investors and internal stakeholders. The project has been efficient from onboarding to the handoff. Gaslight helps the client in the business model's actual formation, and their dedication has also been most impressive.</p>
@@ -163,7 +165,7 @@
     <!-- Footer -->
     <footer class="bg-palemint py-8">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 class="text-periwinkle font-bold mb-2 font-poppins">CONNECT</h3>
             <p class="text-gray-700 font-sans">best.kati@gmail.com</p>
@@ -184,5 +186,22 @@
       </div>
     </footer>
   </main>
+  <script>
+    const words = ['Mentor', 'Designer', 'Creator', 'Problem Solver'];
+    let currentIndex = 0;
+    const rotatingText = document.getElementById('rotating-text');
+    
+    function rotateWords() {
+      rotatingText.style.opacity = '0';
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % words.length;
+        rotatingText.textContent = words[currentIndex];
+        rotatingText.style.opacity = '1';
+      }, 500);
+    }
+
+    // Initial rotation
+    setInterval(rotateWords, 3000);
+  </script>
 </body>
   
