@@ -24,6 +24,36 @@
       }
     </script>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-palemint font-sans">
     <!-- Header/Navbar -->
@@ -53,39 +83,41 @@
 
     <main>
         <!-- Project Hero Section -->
-        <section class="bg-periwinkle py-16">
+        <section class="bg-periwinkle pt-16">
             <div class="container mx-auto px-4">
-                <div class="max-w-5xl mx-auto">
+                <div class="max-w-5xl mx-auto text-center">
                     <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Family Nurturing Center</h1>
-                    <p class="text-white text-lg mb-6 font-sans">2023/2024</p>
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <img src="../images/project2.png" alt="Family Nurturing Center Project" class="w-full">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="../images/FNC-top-image.png" alt="Family Nurturing Center Project" class="w-full">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Project Details -->
-        <section class="py-16">
+        <section class="bg-white py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Overview -->
                         <div class="md:col-span-2">
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Overview</h2>
-                            <p class="text-gray-700 mb-6 font-sans">The Family Nurturing Center project involved redesigning their digital presence to better serve families in need. The goal was to create a more accessible and user-friendly platform that would help connect families with vital resources and support services.</p>
-                            
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">My Role</h2>
-                            <p class="text-gray-700 mb-6 font-sans">As the UX designer, I led the research and design process, working closely with stakeholders to understand the needs of both the organization and the families they serve. I created user flows, wireframes, and interactive prototypes to guide the development process.</p>
+                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins"></h2>
+                            <p class="text-gray-700 mb-6 font-sans">As the Project Lead, Front-End Developer, and UX Designer, I took the reins in guiding this project from the very beginning, overseeing the entire process to ensure everything stayed on track and met the objectives. I was deeply involved in every phase—from managing the project timeline and collaborating with the Family Nurturing Center team to ensure we truly understood their needs, to leading the development and design efforts. </p>
 
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Process</h2>
-                            <p class="text-gray-700 mb-6 font-sans">The project began with stakeholder interviews and user research to understand the needs of families seeking support. We conducted usability testing with both staff and families to identify pain points in the existing system. The design process focused on creating clear pathways to resources while maintaining privacy and dignity for users.</p>
-                        </div>
+                            <p class="text-gray-700 mb-6 font-sans">In addition to my project lead responsibilities, I designed and built the front-end of the platform, making sure it was not only user-friendly but also visually intuitive. The system needed to be seamless, reliable, and easy for the staff to navigate, so I focused on creating an interface that would support them in their mission, rather than make their jobs harder.
+
+                            </p>
+                            
+                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Project Overview</h2>
+                            <p class="text-gray-700 mb-6 font-sans">Family Nurturing Center was dealing with a big problem: an old, unreliable database and a ton of static spreadsheets. These tools were making their day-to-day operations harder than they needed to be. Data was being lost or duplicated, and the team was spending more time managing this mess than doing what they really wanted to do—helping families. </p>
+
+                            <p class="text-gray-700 mb-6 font-sans">When we came in, we saw an opportunity to create a platform that not only cleaned up the chaos but also gave them the tools they needed to focus on their mission. We built a dynamic, easy-to-use platform to handle participant data, family visits, and more—freeing up their time so they could focus on making a difference.</p>
+
+                            </div>
 
                         <!-- Project Info -->
-                        <div>
-                            <div class="bg-white rounded-2xl p-6 shadow-lg">
-                                <h3 class="text-xl font-bold text-periwinkle mb-4 font-poppins">Project Details</h3>
+                        <div class="border-l-2 border-gray-200">
+                            <div class="rounded-2xl pl-6">
                                 <ul class="space-y-4">
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Client</span>
@@ -93,11 +125,15 @@
                                     </li>
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Timeline</span>
-                                        <span class="text-gray-700">2023-2024</span>
+                                        <span class="text-gray-700">2022-2024</span>
                                     </li>
                                     <li>
-                                        <span class="text-gray-600 font-semibold block">Services</span>
-                                        <span class="text-gray-700">UX Research, UX Design, UI Design</span>
+                                        <span class="text-gray-600 font-semibold block">Role</span>
+                                        <span class="text-gray-700">Project Lead, UX Design, UI Design, Front-End Development</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-gray-600 font-semibold block">Tools</span>
+                                        <span class="text-gray-700">Figma, HTML, CSS</span>
                                     </li>
                                 </ul>
                             </div>
@@ -107,18 +143,49 @@
             </div>
         </section>
 
-        <!-- Client Review -->
-        <section class="bg-white py-16">
+        <!-- Process Section -->
+        <section class="bg-periwinkle py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
-                    <div class="bg-palemint rounded-2xl p-8 shadow-lg max-w-xl mx-auto">
-                        <p class="text-periwinkle font-semibold mb-2 font-sans">The new design has significantly improved our ability to connect with families. The intuitive interface makes it easier for families to find the resources they need, and the streamlined process has reduced the time it takes to get help to those who need it most.</p>
-                        <span class="text-gray-500 text-sm font-sans">FAMILY NURTURING CENTER STAFF</span>
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">The Process & Results</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        <!-- Top row - 3 images -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process1.jpg" alt="Process Step 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process2.jpg" alt="Process Step 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process3.jpg" alt="Process Step 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <!-- Bottom row - Scrollable gallery -->
+                    <div class="relative">
+                        <div class="overflow-x-auto pb-4 scrollbar-hide">
+                            <div class="flex space-x-8 min-w-max">
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/process4.jpg" alt="Process Step 4" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/process5.jpg" alt="Process Step 5" class="w-full h-full object-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Scroll indicator -->
+                        <div class="text-center mt-4 text-white text-sm">
+                            ← Scroll to see more →
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImage" class="modal-content" src="" alt="Enlarged image">
+    </div>
 
     <!-- Footer -->
     <footer class="bg-palemint py-8">
@@ -162,6 +229,29 @@
                     });
                 }
             });
+        });
+
+        // Modal functionality
+        function openModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = "none";
+            document.body.style.overflow = 'auto'; // Re-enable background scrolling
+        }
+
+        // Close modal with escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
         });
     </script>
 </body>

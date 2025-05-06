@@ -24,6 +24,36 @@
       }
     </script>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-palemint font-sans">
     <!-- Header/Navbar -->
@@ -56,8 +86,8 @@
         <section class="bg-periwinkle py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">EngageWIT</h1>
-                    <p class="text-white text-lg mb-6 font-sans">2020</p>
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">EdTech Startup</h1>
+                    <p class="text-white text-lg mb-6 font-sans">2021</p>
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
                         <img src="../images/project1.png" alt="EngageWIT Project" class="w-full">
                     </div>
@@ -66,26 +96,27 @@
         </section>
 
         <!-- Project Details -->
-        <section class="py-16">
+        <section class="bg-white py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Overview -->
                         <div class="md:col-span-2">
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Overview</h2>
-                            <p class="text-gray-700 mb-6 font-sans">EngageWIT is a platform designed to connect women in technology with meaningful mentorship opportunities. The project aimed to create a seamless experience for both mentors and mentees, facilitating meaningful connections and professional growth in the tech industry.</p>
-                            
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">My Role</h2>
-                            <p class="text-gray-700 mb-6 font-sans">As the lead UX/UI designer, I was responsible for creating the user experience and interface design for the platform. This included conducting user research, creating wireframes, designing the user interface, and collaborating with developers to ensure successful implementation.</p>
+                        
+                            <p class="text-gray-700 mb-6 font-sans">As the UX and UI Designer for the Engagewit project, my main focus was on creating an intuitive and engaging platform for teachers and students. I began the design process by developing wireframes to outline the platform's structure and user flow, ensuring that everything was mapped out in a way that made sense for our end users. I then conducted user research, speaking directly with teachers to understand their needs and pain points. These insights were crucial in shaping the platform's design, making sure we addressed the real challenges teachers face in the classroom. </p>
 
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Process</h2>
-                            <p class="text-gray-700 mb-6 font-sans">The design process began with extensive user research and interviews with potential users. We identified key pain points in existing mentorship platforms and developed solutions to address them. The design evolved through multiple iterations, incorporating user feedback at each stage. The final design focused on creating an intuitive matching system and fostering meaningful connections between mentors and mentees.</p>
-                        </div>
+                            <p class="text-gray-700 mb-6 font-sans">Once the research was integrated, I designed a clickable prototype to bring the platform to life in an interactive way. The prototype allowed us to test the user experience, refine the design, and use it as a foundation for further development and fundraising. My role was all about ensuring the platform was simple, functional, and designed to meet the needs of teachers, making their workflow easier and more efficient. </p>
+                                
+                                
+                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Project Overview</h2>
+                            <p class="text-gray-700 mb-6 font-sans">This Edtech startup was designed to address the labor shortage in education by connecting university students directly with classrooms, offering much-needed support to teachers. This idea started as a university thesis, and the challenge was to transform it from a theoretical concept into a practical, clickable prototype that could be tested and refined. </p>
+
+                                As part of the team, I helped take this vision and turn it into a usable prototype that could serve as the foundation for future development and funding. Our goal was to make sure that the platform was simple, intuitive, and met the needs of both teachers and students.</p>
+                            </div>
 
                         <!-- Project Info -->
-                        <div>
-                            <div class="bg-white rounded-2xl p-6 shadow-lg">
-                                <h3 class="text-xl font-bold text-periwinkle mb-4 font-poppins">Project Details</h3>
+                        <div class="border-l-2 border-gray-200">
+                            <div class="rounded-2xl pl-6">
                                 <ul class="space-y-4">
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Client</span>
@@ -93,11 +124,15 @@
                                     </li>
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Timeline</span>
-                                        <span class="text-gray-700">2020</span>
+                                        <span class="text-gray-700">2021</span>
                                     </li>
                                     <li>
-                                        <span class="text-gray-600 font-semibold block">Services</span>
+                                        <span class="text-gray-600 font-semibold block">Role</span>
                                         <span class="text-gray-700">UX Design, UI Design</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-gray-600 font-semibold block">Tools</span>
+                                        <span class="text-gray-700">Figma</span>
                                     </li>
                                 </ul>
                             </div>
@@ -107,18 +142,55 @@
             </div>
         </section>
 
-        <!-- Client Review -->
-        <section class="bg-white py-16">
+        <!-- Process Section -->
+        <section class="bg-periwinkle py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
-                    <div class="bg-palemint rounded-2xl p-8 shadow-lg max-w-xl mx-auto">
-                        <p class="text-periwinkle font-semibold mb-2 font-sans">The clickable prototype has received positive feedback from investors and internal stakeholders. The project has been efficient from onboarding to the handoff. Gaslight helps the client in the business model's actual formation, and their dedication has also been most impressive.</p>
-                        <span class="text-gray-500 text-sm font-sans">KEVIN FROM ENGAGEWIT</span>
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">The Process & Results</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        <!-- Top row - 3 images -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process3teched.jpg" alt="Process Step 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process2teched.jpg" alt="Process Step 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
+                            <img src="../images/process1teched.jpg" alt="Process Step 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <!-- Bottom row - Scrollable gallery -->
+                    <div class="relative">
+                        <div class="overflow-x-auto pb-4 scrollbar-hide">
+                            <div class="flex space-x-8 min-w-max">
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched1.png" alt="Process Step 4" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched2.png" alt="Process Step 5" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched3.png" alt="Process Step 6" class="w-full h-full object-contain">
+                                </div>
+                                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                                    <img src="../images/teched4.png" alt="Process Step 7" class="w-full h-full object-contain">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Scroll indicator -->
+                        <div class="text-center mt-4 text-white text-sm">
+                            ← Scroll to see more →
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImage" class="modal-content" src="" alt="Enlarged image">
+    </div>
 
     <!-- Footer -->
     <footer class="bg-palemint py-8">
@@ -162,6 +234,29 @@
                     });
                 }
             });
+        });
+
+        // Modal functionality
+        function openModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = "none";
+            document.body.style.overflow = 'auto'; // Re-enable background scrolling
+        }
+
+        // Close modal with escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
         });
     </script>
 </body>

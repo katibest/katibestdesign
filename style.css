@@ -96,4 +96,10 @@
 /* Ensure the dropdown stays visible when hovering over it */
 .group-hover\:block:hover {
     display: block;
+}
+
+/* Body text styles */
+.font-sans.text-sm,
+.font-sans.text-base {
+    line-height: 1.75 !important; /* This will override any other line-height settings */
 } 
