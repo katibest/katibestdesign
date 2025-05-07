@@ -9,9 +9,9 @@
         theme: {
           extend: {
             colors: {
-              palemint: '#d3e7e2',
-              periwinkle: '#6B74B3',
-              goldpeach: '#D4A76A',
+              palemint: '#97D8C4',
+              periwinkle: '#6D74AE',
+              goldpeach: '#F4B942',
             },
             fontFamily: {
               sans: ['Open Sans', 'ui-sans-serif', 'system-ui'],
@@ -70,9 +70,7 @@
       </div>
     </section>
     <!-- Wavy Divider -->
-    <div class="w-full overflow-hidden leading-none" style="height: 48px; margin-top: -1px;">
-      <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#d3e7e2" d="M0,0 C480,48 960,0 1440,48 L1440,48 L0,48 Z"></path></svg>
-    </div>
+ 
     <!-- About Section -->
     <section id="about" class="bg-white py-12">
       <div class="container mx-auto px-4">
@@ -85,7 +83,7 @@
     <section class="bg-palemint py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl font-bold text-periwinkle mb-8 text-center font-poppins">Latest Projects</h2>
+          <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">Latest Projects</h2>
           <div class="relative">
             <div class="flex overflow-x-auto gap-6 max-w-full scrollbar-hide pb-4">
               <a href="projects/engagewit.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
@@ -115,10 +113,7 @@
       </div>
     </section>
     <!-- Wavy Divider -->
-    <div class="w-full overflow-hidden leading-none" style="height: 48px; margin-bottom: -1px;">
-      <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#d3e7e2" d="M0,0 C480,48 960,0 1440,48 L1440,48 L0,48 Z"></path></svg>
-    </div>
-  
+
     <!-- Experience Section -->
     <section class="bg-white py-16">
       <div class="container mx-auto px-4">
@@ -171,27 +166,40 @@
         <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-white mb-1 font-poppins">Meet the team</h2>
           <p class="text-white mb-4 font-sans">CINCINNATI OFFICE AKA MY HOME</p>
-          <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex flex-col items-left">
-              <img src="images/me-1.jpg" alt="Kati Best" class="rounded-2xl shadow-lg w-48 h-72 object-cover mb-1">
-              <span class="inline-block bg-goldpeach text-white px-3 py-0.5 rounded-full text-sm font-semibold font-sans w-48 text-center">KATI BEST</span>
+          <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-col items-center">
+              <img src="images/me-1.jpg" alt="Kati Best" class="rounded-t-2xl shadow-lg w-48 h-72 object-cover">
+              <div class="bg-goldpeach text-white rounded-b-2xl w-48 text-center">
+                <span class="block text-sm font-semibold font-sans py-0.5">KATI BEST</span>
+                <span class="block text-xs pb-0.5">THE BOSS</span>
+              </div>
             </div>
-            <div class="grid grid-cols-2 gap-3 md:w-1/2">
-              <div class="flex flex-col items-center">
-                <img src="images/rocket.jpg" alt="Rocket Dog" class="rounded-2xl shadow-lg w-32 h-32 object-cover mb-1">
-                <span class="inline-block bg-goldpeach text-white px-3 py-0.5 rounded-full text-sm font-semibold font-sans w-32 text-center">ROCKET DOG</span>
+            <div class="flex flex-col items-center">
+              <img src="images/rocket.jpg" alt="Rocket Dog" class="rounded-t-2xl shadow-lg w-48 h-72 object-cover">
+              <div class="bg-goldpeach text-white rounded-b-2xl w-48 text-center">
+                <span class="block text-sm font-semibold font-sans py-0.5">ROCKET DOG</span>
+                <span class="block text-xs pb-0.5">CHO</span>
               </div>
-              <div class="flex flex-col items-center">
-                <img src="images/ryder.jpg" alt="Ryder" class="rounded-2xl shadow-lg w-32 h-32 object-cover mb-1">
-                <span class="inline-block bg-goldpeach text-white px-3 py-0.5 rounded-full text-sm font-semibold font-sans w-32 text-center">RYDER</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/ryder.jpg" alt="Ryder" class="rounded-t-2xl shadow-lg w-48 h-72 object-cover">
+              <div class="bg-goldpeach text-white rounded-b-2xl w-48 text-center">
+                <span class="block text-sm font-semibold font-sans py-0.5">RYDER</span>
+                <span class="block text-xs pb-0.5">SQUEAKER</span>
               </div>
-              <div class="flex flex-col items-center">
-                <img src="images/rogue.jpg" alt="Rogue" class="rounded-2xl shadow-lg w-32 h-32 object-cover mb-1">
-                <span class="inline-block bg-goldpeach text-white px-3 py-0.5 rounded-full text-sm font-semibold font-sans w-32 text-center">ROGUE</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/rogue.jpg" alt="Rogue" class="rounded-t-2xl shadow-lg w-48 h-72 object-cover">
+              <div class="bg-goldpeach text-white rounded-b-2xl w-48 text-center">
+                <span class="block text-sm font-semibold font-sans py-0.5">ROGUE</span>
+                <span class="block text-xs pb-0.5">QUEEN</span>
               </div>
-              <div class="flex flex-col items-center">
-                <img src="images/finn.jpg" alt="Finn" class="rounded-2xl shadow-lg w-32 h-32 object-cover mb-1">
-                <span class="inline-block bg-goldpeach text-white px-3 py-0.5 rounded-full text-sm font-semibold font-sans w-32 text-center">FINN</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/finn.jpg" alt="Finn" class="rounded-t-2xl shadow-lg w-48 h-72 object-cover">
+              <div class="bg-goldpeach text-white rounded-b-2xl w-48 text-center">
+                <span class="block text-sm font-semibold font-sans py-0.5">FINN</span>
+                <span class="block text-xs pb-0.5">OLD MAN</span>
               </div>
             </div>
           </div>
