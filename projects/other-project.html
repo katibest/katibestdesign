@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Project - Kati Best Portfolio</title>
+    <title>Practical Product Designer Series - Kati Best Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -53,64 +53,49 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
-        /* Dropdown styles */
-        .dropdown-menu {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-5px);
-            transition: all 0.2s ease;
-            pointer-events: none;
+        .scroll-indicator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
         }
-        .group:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-            pointer-events: auto;
+        .scroll-indicator::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 33.33%;
+            background: white;
+            transition: transform 0.3s ease;
         }
-        .dropdown-item {
-            transition: all 0.15s ease;
+        .scroll-indicator.scroll-1::after {
+            transform: translateX(0);
         }
-        .dropdown-item:hover {
-            background-color: #f8f9fa;
-            transform: translateX(2px);
+        .scroll-indicator.scroll-2::after {
+            transform: translateX(100%);
+        }
+        .scroll-indicator.scroll-3::after {
+            transform: translateX(200%);
         }
     </style>
 </head>
 <body class="bg-palemint font-sans">
-    <!-- Header/Navbar -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="../index.html" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
-            <ul class="flex space-x-8 text-lg font-medium">
-                <li class="relative group">
-                    <button class="text-gray-700 hover:text-periwinkle flex items-center">
-                        Projects
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <ul class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block">
-                        <li><a href="engagewit.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">EngageWIT</a></li>
-                        <li><a href="family-nurturing-center.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Family Nurturing Center</a></li>
-                        <li><a href="patient-reach-360.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Patient Reach 360</a></li>
-                        <li><a href="other-project.html" class="block px-4 py-2 text-gray-700 hover:bg-palemint hover:text-periwinkle">Other Project</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html#about" class="text-gray-700 hover:text-periwinkle">About Me</a></li>
-                <li><a href="../index.html#contact" class="text-gray-700 hover:text-periwinkle">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation placeholder -->
+    <div id="nav-placeholder"></div>
 
     <main>
         <!-- Project Hero Section -->
-        <section class="bg-periwinkle py-16">
+        <section class="bg-periwinkle pt-16">
             <div class="container mx-auto px-4">
-                <div class="max-w-5xl mx-auto">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Other Project</h1>
-                    <p class="text-white text-lg mb-6 font-sans">2021</p>
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                        <img src="../images/project4.png" alt="Other Project" class="w-full">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Practical Product Designer Series</h1>
+                    <div class="flex justify-center items-center">
+                        <div class="rounded-2xl overflow-hidden flex justify-center">
+                            <img src="../images/ppd-hero.png" alt="Practical Product Designer Series" class="w-1/2 mx-auto">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,34 +109,32 @@
                         <!-- Overview -->
                         <div class="md:col-span-2">
                             <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Overview</h2>
-                            <p class="text-gray-700 mb-6 font-sans">This project showcases a unique design challenge that required innovative solutions and creative problem-solving. The focus was on creating an engaging user experience while maintaining functionality and accessibility.</p>
+                            <p class="text-gray-700 mb-6 font-sans">In this ongoing series, I'm diving into the world of new and upcoming technologies and tools to explore how far I can go as a product designer with front-end coding skills and a bit of backend knowledge. Using Cursor as a key tool, I'm challenging myself to see what I can create on my own, pushing the limits of what a designer can accomplish without a developer's direct assistance.</p>
                             
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">My Role</h2>
-                            <p class="text-gray-700 mb-6 font-sans">As the lead designer, I was responsible for the entire design process from concept to final implementation. This included user research, wireframing, prototyping, and overseeing the development process.</p>
-
-                            <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Process</h2>
-                            <p class="text-gray-700 mb-6 font-sans">The design process involved extensive research and user testing to ensure the final product met user needs while maintaining a high standard of design quality. Multiple iterations were created and refined based on user feedback and stakeholder input.</p>
+                            <p class="text-gray-700 mb-6 font-sans">Through the series, I'll be documenting my journey, starting with story mapping and wireframing, and then bringing the project full circle by building out a functional prototype. Each episode will cover the tools, techniques, and challenges I encounter along the way. Currently, there are two episodes out, with new ones releasing weekly as I continue to explore, experiment, and learn.</p>
                         </div>
 
                         <!-- Project Info -->
                         <div>
-                            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 border-l-4 border-l-periwinkle">
-                                <h3 class="text-xl font-bold text-periwinkle mb-4 font-poppins">Project Details</h3>
-                                <ul class="space-y-4">
-                                    <li>
-                                        <span class="text-gray-600 font-semibold block">Client</span>
-                                        <span class="text-gray-700">Client Name</span>
-                                    </li>
-                                    <li>
-                                        <span class="text-gray-600 font-semibold block">Timeline</span>
-                                        <span class="text-gray-700">2021</span>
-                                    </li>
-                                    <li>
-                                        <span class="text-gray-600 font-semibold block">Services</span>
-                                        <span class="text-gray-700">UX Design, UI Design</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <h3 class="text-xl font-bold text-periwinkle mb-4 font-poppins">Project Details</h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gray-600 font-semibold block">Client</span>
+                                    <span class="text-gray-700">Me!</span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-600 font-semibold block">Timeline</span>
+                                    <span class="text-gray-700">2025</span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-600 font-semibold block">Role</span>
+                                    <span class="text-gray-700">UX, UI & Developer</span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-600 font-semibold block">Frameworks</span>
+                                    <span class="text-gray-700">Cursor, Elixir, Phoenix, Tailwind</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -162,51 +145,43 @@
         <section class="bg-periwinkle py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">Process</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Process images will go here -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <img src="../images/process1.jpg" alt="Process Step 1" class="w-full">
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">The Process & Results</h2>
+                    
+                    <!-- Top Row - 3 Images -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer">
+                            <img src="../images/process1ppd.jpg" alt="Process Step 1" class="w-full h-64 object-cover">
                         </div>
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <img src="../images/process2.jpg" alt="Process Step 2" class="w-full">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer">
+                            <img src="../images/process2ppd.jpg" alt="Process Step 2" class="w-full h-64 object-cover">
+                        </div>        
+                    </div>
+
+                    <!-- Bottom Row - Horizontal Scrolling Gallery -->
+                    <div class="relative">
+                        <div class="overflow-x-auto scrollbar-hide">
+                            <div class="flex space-x-6 pb-4">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kY68PbJ4_bQ?si=xEnTHd33llYMCfxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/U1AC0xRRNuM?si=neZWTQZ2bEZgoMfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            
                         </div>
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <img src="../images/process3.jpg" alt="Process Step 3" class="w-full">
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <img src="../images/process4.jpg" alt="Process Step 4" class="w-full">
-                        </div>
+                        <div class="scroll-indicator"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-palemint py-8">
-        <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-periwinkle font-bold mb-2 font-poppins">CONNECT</h3>
-                    <p class="text-gray-700 font-sans">best.kati@gmail.com</p>
-                    <p class="text-gray-700 font-sans">513-257-3664</p>
-                </div>
-                <div>
-                    <h3 class="text-periwinkle font-bold mb-2 font-poppins">PORTFOLIO</h3>
-                    <ul class="text-gray-700 font-sans">
-                        <li>Family Nurturing Center</li>
-                        <li>Patient Reach 360</li>
-                        <li>Abbie</li>
-                        <li>Launch Scout</li>
-                        <li>EngageWIT</li>
-                        <li>Photography</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <img id="modalImage" class="modal-content" src="" alt="Enlarged view">
+    </div>
 
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/include-nav.js"></script>
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -225,6 +200,40 @@
                     });
                 }
             });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const images = document.querySelectorAll('.bg-white.rounded-2xl img');
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        modal.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+
+        // Scroll indicator
+        const scrollContainer = document.querySelector('.overflow-x-auto');
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+
+        scrollContainer.addEventListener('scroll', function() {
+            const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            const scrollPosition = scrollContainer.scrollLeft;
+            const scrollPercentage = scrollPosition / scrollWidth;
+
+            if (scrollPercentage < 0.33) {
+                scrollIndicator.className = 'scroll-indicator scroll-1';
+            } else if (scrollPercentage < 0.66) {
+                scrollIndicator.className = 'scroll-indicator scroll-2';
+            } else {
+                scrollIndicator.className = 'scroll-indicator scroll-3';
+            }
         });
     </script>
 </body>

@@ -47,30 +47,10 @@
     </style>
 </head>
 <body class="bg-palemint font-sans">
-  <!-- Header/Navbar -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
-      <ul class="flex space-x-8 text-lg font-medium">
-        <li class="relative group">
-          <button class="text-gray-700 hover:text-periwinkle flex items-center transition-colors duration-150">
-            Projects
-            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <ul class="dropdown-menu absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-sm py-1.5">
-            <li><a href="projects/engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
-            <li><a href="projects/family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
-            <li><a href="projects/patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
-            <li><a href="projects/other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Other Project</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+    <!-- Navigation placeholder -->
+    <div id="nav-placeholder"></div>
+
+    <main>
     <!-- Hero Section -->
     <section class="bg-periwinkle py-16">
       <div class="container mx-auto px-4">
@@ -286,32 +266,13 @@
         </div>
       </div>
     </section>
-  
-    <!-- Footer -->
-    <footer class="bg-palemint py-8">
-      <div class="container mx-auto px-4">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-periwinkle font-bold mb-2 font-poppins">CONNECT</h3>
-            <p class="text-gray-700 font-sans">best.kati@gmail.com</p>
-            <p class="text-gray-700 font-sans">513-257-3664</p>
-          </div>
-          <div>
-            <h3 class="text-periwinkle font-bold mb-2 font-poppins">PORTFOLIO</h3>
-            <ul class="text-gray-700 font-sans">
-              <li>Family Nurturing Center</li>
-              <li>Patient Reach 360</li>
-              <li>Abbie</li>
-              <li>Launch Scout</li>
-              <li>EngageWIT</li>
-              <li>Photography</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </main>
-  <script>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include-nav.js"></script>
+    <script>
     const words = ['Mentor', 'Designer', 'Creator', 'Problem Solver'];
     let currentIndex = 0;
     const rotatingText = document.getElementById('rotating-text');

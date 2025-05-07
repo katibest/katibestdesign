@@ -1,7 +1,7 @@
 <!-- Header/Navbar -->
 <header class="bg-white shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="../index.html" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
+        <a href="../index.html" class="text-2xl font-bold text-periwinkle font-poppins nav-home-link">Kati Best</a>
         <ul class="flex space-x-8 text-lg font-medium">
             <li class="relative group">
                 <button class="text-gray-700 hover:text-periwinkle flex items-center transition-colors duration-150">
@@ -11,10 +11,10 @@
                     </svg>
                 </button>
                 <ul class="dropdown-menu absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-sm py-1.5">
-                    <li><a href="engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
-                    <li><a href="family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
-                    <li><a href="patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
-                    <li><a href="other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Other Project</a></li>
+                    <li><a href="../projects/engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
+                    <li><a href="../projects/family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
+                    <li><a href="../projects/patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
+                    <li><a href="../projects/other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Experiment</a></li>
                 </ul>
             </li>
             <li><a href="../index.html#about" class="nav-about-link text-gray-700 hover:text-periwinkle transition-colors duration-150">About Me</a></li>
@@ -22,30 +22,6 @@
         </ul>
     </nav>
 </header>
-
-<style>
-    /* Dropdown styles */
-    .dropdown-menu {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-5px);
-        transition: all 0.2s ease;
-        pointer-events: none;
-    }
-    .group:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-    .dropdown-item {
-        transition: all 0.15s ease;
-    }
-    .dropdown-item:hover {
-        background-color: #f8f9fa;
-        transform: translateX(2px);
-    }
-</style>
 
 <script>
     // Update navigation links based on current page
