@@ -1,7 +1,7 @@
 <!-- Header/Navbar -->
 <header class="bg-white shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="../index.html" class="text-2xl font-bold text-periwinkle font-poppins nav-home-link">Kati Best</a>
+        <a data-nav-link="home" class="text-2xl font-bold text-periwinkle font-poppins">Kati Best</a>
         <ul class="flex space-x-8 text-lg font-medium">
             <li class="relative group">
                 <button class="text-gray-700 hover:text-periwinkle flex items-center transition-colors duration-150">
@@ -11,33 +11,56 @@
                     </svg>
                 </button>
                 <ul class="dropdown-menu absolute left-0 mt-2 w-52 bg-white rounded-lg shadow-sm py-1.5">
-                    <li><a href="../projects/engagewit.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
-                    <li><a href="../projects/family-nurturing-center.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
-                    <li><a href="../projects/patient-reach-360.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Patient Reach 360</a></li>
-                    <li><a href="../projects/other-project.html" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Experiment</a></li>
+                    <li><a data-nav-link="project" data-project="engagewit" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">EngageWIT</a></li>
+                    <li><a data-nav-link="project" data-project="family-nurturing-center" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Family Nurturing Center</a></li>
+                    <li><a data-nav-link="project" data-project="patient-reach-360" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">E-Beam</a></li>
+                    <li><a data-nav-link="project" data-project="other-project" class="dropdown-item block px-5 py-2 text-gray-700 hover:text-periwinkle">Experiment</a></li>
                 </ul>
             </li>
-            <li><a href="../index.html#about" class="nav-about-link text-gray-700 hover:text-periwinkle transition-colors duration-150">About Me</a></li>
-            <li><a href="../index.html#contact" class="nav-contact-link text-gray-700 hover:text-periwinkle transition-colors duration-150">Contact</a></li>
+            <li><a data-nav-link="about" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">About Me</a></li>
+            <li><a data-nav-link="contact" class="text-gray-700 hover:text-periwinkle transition-colors duration-150">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<script>
-    // Update navigation links based on current page
-    document.addEventListener('DOMContentLoaded', function() {
-        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
-        
-        // Update About Me and Contact links
-        const aboutLink = document.querySelector('.nav-about-link');
-        const contactLink = document.querySelector('.nav-contact-link');
-        
-        if (isHomePage) {
-            aboutLink.href = '#about';
-            contactLink.href = '#contact';
-        } else {
-            aboutLink.href = '../index.html#about';
-            contactLink.href = '../index.html#contact';
-        }
-    });
-</script> 
+<style>
+    .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-5px);
+        transition: all 0.2s ease;
+        pointer-events: none;
+        z-index: 50;
+    }
+    .group:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+        transition-delay: 0s;
+    }
+    .group:hover .dropdown-menu,
+    .dropdown-menu:hover {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .dropdown-item {
+        transition: all 0.15s ease;
+        position: relative;
+    }
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+        transform: translateX(2px);
+    }
+    /* Add padding to create a larger hover area */
+    .group::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 10px;
+    }
+</style> 

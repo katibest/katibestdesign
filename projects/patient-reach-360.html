@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Reach 360 - Kati Best Portfolio</title>
+    <title>E-Beam - Kati Best Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,6 +24,7 @@
       }
     </script>
     <link rel="stylesheet" href="../style.css">
+    <script src="../js/include-nav.js"></script>
     <style>
         .modal {
             display: none;
@@ -53,6 +54,25 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
+        /* Dropdown styles */
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-5px);
+            transition: all 0.2s ease;
+        }
+        .group:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-item {
+            transition: all 0.15s ease;
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            transform: translateX(2px);
+        }
     </style>
 </head>
 <body class="bg-palemint font-sans">
@@ -64,9 +84,9 @@
         <section class="bg-periwinkle pt-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto text-center">
-                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Patient Reach 360</h1>
+                    <h1 class="text-white text-4xl md:text-5xl font-bold font-poppins">E-Beam</h1>
                     <div class="rounded-2xl overflow-hidden">
-                        <img src="../images/Engagewit-image.png" alt="Patient Reach 360 Project" class="w-full">
+                        <img src="../images/ebeam-hero.png" alt="E-Beam Project" class="w-full">
                     </div>
                 </div>
             </div>
@@ -79,14 +99,14 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Overview -->
                         <div class="md:col-span-2">
-                            <p class="text-gray-700 mb-6 font-sans">As the UX and UI Designer for Patient Reach 360, I focused on creating an intuitive and efficient platform for healthcare providers. The challenge was to design a system that could handle complex patient data while remaining accessible and easy to use for medical professionals with varying levels of technical expertise.</p>
+                            <p class="text-gray-700 mb-6 font-sans">For the Ebeam project, I was the project lead and designer, overseeing the entire process while tackling design system challenges and ensuring a cohesive user experience. Despite the short turnaround, the project was a great opportunity to address key features, like adding the ability to create empty jobs and a calendar view for each machine, which helped make the platform more user-friendly and efficient.</p>
 
-                            <p class="text-gray-700 mb-6 font-sans">I conducted extensive user research with healthcare providers to understand their workflow and pain points. This research informed every aspect of the design, from the information architecture to the visual interface. The result was a platform that not only met the technical requirements but also enhanced the user experience for healthcare professionals.</p>
-                            
+                            <p class="text-gray-700 mb-6 font-sans">I also focused on cleaning up design inconsistencies throughout the platform, ensuring everything from buttons to layouts was aligned and visually cohesive. One of the more rewarding fixes was restoring the functionality of the back button, which had been unintentionally disabled, creating friction for users. I made sure it worked again and added proper form error messaging to improve the overall user experience.</p>
+                                
                             <h2 class="text-2xl font-bold text-periwinkle mb-4 font-poppins">Project Overview</h2>
-                            <p class="text-gray-700 mb-6 font-sans">Patient Reach 360 needed a comprehensive solution to manage patient outreach and engagement. The existing system was fragmented and inefficient, leading to missed appointments and poor patient communication. Our goal was to create a unified platform that would streamline these processes and improve patient outcomes.</p>
+                            <p class="text-gray-700 mb-6 font-sans">Ebeam needed a quick turnaround to implement a few essential updates to their platform. The project involved adding the capability to create empty jobs and a calendar view for each machine. While the scope was smaller, there were still challenges—especially around inconsistencies in the design system and a few tricky user experience issues.</p>
 
-                            <p class="text-gray-700 mb-6 font-sans">The new platform needed to handle appointment scheduling, patient reminders, and communication tracking while maintaining HIPAA compliance. We focused on creating a system that was both powerful and user-friendly, ensuring that healthcare providers could easily manage their patient relationships without getting lost in complex interfaces.</p>
+                            <p class="text-gray-700 mb-6 font-sans">A key highlight of the project was the simple yet impactful restoration of the back button, which had been disabled. Although it was a small fix, it made a significant difference in streamlining the user experience. Overall, the project was a rewarding chance to clean up the platform, improve functionality, and deliver a smoother, more consistent user interface.</p>
                         </div>
 
                         <!-- Project Info -->
@@ -95,20 +115,17 @@
                                 <ul class="space-y-4">
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Client</span>
-                                        <span class="text-gray-700">Patient Reach 360</span>
+                                        <span class="text-gray-700">E-Beam</span>
                                     </li>
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Timeline</span>
-                                        <span class="text-gray-700">2023</span>
+                                        <span class="text-gray-700">2025</span>
                                     </li>
                                     <li>
                                         <span class="text-gray-600 font-semibold block">Role</span>
-                                        <span class="text-gray-700">UX Design, UI Design</span>
+                                        <span class="text-gray-700">UX Design, UI Design, Front end development</span>
                                     </li>
-                                    <li>
-                                        <span class="text-gray-600 font-semibold block">Tools</span>
-                                        <span class="text-gray-700">Figma, HTML, CSS</span>
-                                    </li>
+                            
                                 </ul>
                             </div>
                         </div>
@@ -121,34 +138,23 @@
         <section class="bg-periwinkle py-16">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">The Process & Results</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                        <!-- Top row - 3 images -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process1teched.jpg" alt="Process Step 1" class="w-full h-full object-cover">
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process2teched.jpg" alt="Process Step 2" class="w-full h-full object-cover">
-                        </div>
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[250px]">
-                            <img src="../images/process3teched.jpg" alt="Process Step 3" class="w-full h-full object-cover">
-                        </div>
-                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">Results</h2>
+                    
                     <!-- Bottom row - Scrollable gallery -->
                     <div class="relative">
                         <div class="overflow-x-auto pb-4 scrollbar-hide">
                             <div class="flex space-x-8 min-w-max">
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/teched1.png" alt="Process Step 4" class="w-full h-full object-contain">
+                                    <img src="../images/ebeam1.png" alt="Process Step 4" class="w-full h-full object-contain">
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/teched2.png" alt="Process Step 5" class="w-full h-full object-contain">
+                                    <img src="../images/ebeam2.png" alt="Process Step 5" class="w-full h-full object-contain">
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/teched3.png" alt="Process Step 6" class="w-full h-full object-contain">
+                                    <img src="../images/ebeam3.png" alt="Process Step 6" class="w-full h-full object-contain">
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-[600px] h-[400px] flex-shrink-0 cursor-pointer" onclick="openModal(this.querySelector('img'))">
-                                    <img src="../images/teched4.png" alt="Process Step 7" class="w-full h-full object-contain">
+                                    <img src="../images/ebeam4.png" alt="Process Step 7" class="w-full h-full object-contain">
                                 </div>
                             </div>
                         </div>
@@ -167,65 +173,20 @@
         <img id="modalImage" class="modal-content" src="" alt="Enlarged image">
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-palemint py-8">
-        <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-periwinkle font-bold mb-2 font-poppins">CONNECT</h3>
-                    <p class="text-gray-700 font-sans">best.kati@gmail.com</p>
-                    <p class="text-gray-700 font-sans">513-257-3664</p>
-                </div>
-                <div>
-                    <h3 class="text-periwinkle font-bold mb-2 font-poppins">PORTFOLIO</h3>
-                    <ul class="text-gray-700 font-sans">
-                        <li>Family Nurturing Center</li>
-                        <li>Patient Reach 360</li>
-                        <li>Abbie</li>
-                        <li>Launch Scout</li>
-                        <li>EngageWIT</li>
-                        <li>Photography</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
 
-    <script src="../js/include-nav.js"></script>
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const headerOffset = 80;
-                    const elementPosition = targetElement.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
         // Modal functionality
         function openModal(img) {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImage');
             modal.style.display = "block";
             modalImg.src = img.src;
-            modalImg.alt = img.alt;
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
 
         function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = "none";
-            document.body.style.overflow = 'auto'; // Re-enable background scrolling
+            document.getElementById('imageModal').style.display = "none";
         }
 
         // Close modal with escape key
