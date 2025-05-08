@@ -45,8 +45,15 @@
           <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-poppins">Hello, I'm Kati Best</h1>
             <div class="w-16 h-1 bg-white mx-auto md:mx-0 mb-6 rounded-full"></div>
-            <div class="inline-block bg-goldpeach text-white px-10 py-4 rounded-full font-semibold text-xl mb-6 min-w-[180px] text-center font-sans">
+            <div class="inline-block bg-goldpeach text-white px-10 py-4 rounded-full font-semibold text-xl mb-6 min-w-[180px] text-center font-sans relative" style="vertical-align: top;">
               <span id="rotating-text">Mentor</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Problem Solver</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Designer</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Photographer</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Dog Lover</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Creator</span>
+              <span class="invisible absolute font-semibold text-xl" style="white-space:nowrap;">Gardener</span>
+              
             </div>
             <p class="text-white text-sm md:text-base max-w-md mx-auto md:mx-0 font-sans leading-7">I'm Kati (aka the person behind the computer)! I've spent almost ten years crafting designs that are not only visually engaging but, more importantly, make a meaningful impact on the user experience. For me, it's all about striking that balance between aesthetics and functionality—designing products that people love to use, and that work seamlessly in their everyday lives.</p>
           </div>
@@ -72,24 +79,32 @@
         <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl font-bold text-white mb-8 text-center font-poppins">Latest Projects</h2>
           <div class="relative">
-            <div class="flex overflow-x-auto gap-6 max-w-full scrollbar-hide pb-4">
-              <a href="projects/engagewit.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
-                <img src="images/Engagewit-image.png" alt="EngageWIT" class="rounded mb-3 w-full">
-                <span class="text-periwinkle font-semibold font-sans">EngageWIT</span>
+            <div class="flex items-start overflow-x-auto gap-6 max-w-full scrollbar-hide pb-4">
+              <a href="projects/edtech.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
+                <div class="w-full h-44 mb-3 rounded overflow-hidden">
+                  <img src="images/Engagewit-image.png" alt="EngageWIT" class="w-full h-full object-contain">
+                </div>
+                <span class="text-periwinkle font-semibold font-sans">Ed Tech</span>
                 <span class="text-gray-400 text-xs font-sans">2020</span>
               </a>
               <a href="projects/family-nurturing-center.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
-                <img src="images/fnc-image.png" alt="Family Nurturing Center" class="rounded mb-3 w-full">
+                <div class="w-full h-44 mb-3 rounded overflow-hidden">
+                  <img src="images/fnc-image.png" alt="Family Nurturing Center" class="w-full h-full object-contain">
+                </div>
                 <span class="text-periwinkle font-semibold font-sans">Family Nurturing Center</span>
                 <span class="text-gray-400 text-xs font-sans">2023/2024</span>
               </a>
-              <a href="projects/patient-reach-360.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
-                <img src="images/ebeam1.png" alt="E-Beam" class="rounded mb-3 w-full">
+              <a href="projects/ebeam.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
+                <div class="w-full h-44 mb-3 rounded overflow-hidden">
+                  <img src="images/ebeam1.png" alt="E-Beam" class="w-full h-full object-contain">
+                </div>
                 <span class="text-periwinkle font-semibold font-sans">E-Beam</span>
                 <span class="text-gray-400 text-xs font-sans">2025</span>
               </a>
               <a href="projects/other-project.html" class="bg-white rounded-2xl shadow p-4 flex-shrink-0 w-64 flex flex-col items-start hover:shadow-lg transition">
-                <img src="images/designer-working-at-desk.jpg" alt="Practical Product Designer" class="rounded mb-3 w-full">
+                <div class="w-full h-44 mb-3 rounded overflow-hidden">
+                  <img src="images/designer-working-at-desk.jpg" alt="Practical Product Designer" class="w-full h-full object-contain">
+                </div>
                 <span class="text-periwinkle font-semibold font-sans">Practical Product Designer</span>
                 <span class="text-gray-400 text-xs font-sans">2022</span>
               </a>
@@ -105,41 +120,47 @@
     <section class="bg-white py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl font-bold text-periwinkle mb-8 font-poppins">Experience</h2>
+          <div class="flex items-center mb-8">
+            <h2 class="text-3xl font-bold text-periwinkle font-poppins mr-4">Experience</h2>
+            <a href="katibest-resume-2025.pdf" target="_blank" rel="noopener noreferrer" class="text-periwinkle underline hover:text-goldpeach transition-colors duration-150 text-base font-sans">View Resume</a>
+          </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Left Column - Recent Experience -->
             <div class="space-y-4">
-              <div class="border-l-2 border-periwinkle pl-4">
+              <div>
                 <h3 class="font-bold text-periwinkle">Launch Scout</h3>
                 <p class="text-gray-600 text-sm"><strong>2016 to Present</strong> – Senior UX Designer</p>
                 <p class="text-gray-700 text-sm mt-1">Leading UX design initiatives and mentoring team members</p>
+                <p class="text-gray-700 text-sm mt-1">At Launch Scout, I led design projects, from storymapping to prototyping and front-end coding while collaborating with developers to create seamless, user-focused experiences.</p>
               </div>
 
-              <div class="border-l-2 border-periwinkle pl-4">
+              <div>
                 <h3 class="font-bold text-periwinkle">Northern Kentucky University</h3>
                 <p class="text-gray-600 text-sm"><strong>Fall 2024</strong> – Adjunct Professor</p>
                 <p class="text-gray-700 text-sm mt-1">Teaching and mentoring the next generation of designers</p>
+                <p class="text-gray-700 text-sm mt-1">I taught a 400-level interaction design class, mentoring students through the design process - from research and interviewing users to creating polished Figma prototypes, while fostering new design thinking.</p>
               </div>
 
-              <div class="border-l-2 border-periwinkle pl-4">
+              <div>
                 <h3 class="font-bold text-periwinkle">Western & Southern</h3>
                 <p class="text-gray-600 text-sm"><strong>2015-2016</strong> – Web Designer</p>
                 <p class="text-gray-700 text-sm mt-1">Created engaging web experiences for financial services</p>
+                <p class="text-gray-700 text-sm mt-1">I conceptualized and developed responsive websites, marketing emails, and social media content for Western & Southern Financial Group and its subsidiaries, ensuring designs were aligned with their brand strategy and marketing goals.</p>
               </div>
             </div>
 
             <!-- Right Column - Earlier Experience -->
             <div class="space-y-4">
-              <div class="border-l-2 border-periwinkle pl-4">
+              <div>
                 <h3 class="font-bold text-periwinkle">Spicefire</h3>
                 <p class="text-gray-600 text-sm"><strong>2014-2015</strong> – Branding/Packaging Designer</p>
                 <p class="text-gray-700 text-sm mt-1">Developed brand identities and packaging solutions</p>
               </div>
-
-              <div class="border-l-2 border-periwinkle pl-4">
+              <div>
                 <h3 class="font-bold text-periwinkle">Northern Kentucky University</h3>
                 <p class="text-gray-600 text-sm"><strong>2013</strong> – Graduation</p>
                 <p class="text-gray-700 text-sm mt-1">Completed degree in Design</p>
+                <p class="text-gray-700 text-sm mt-1">Earned BFA in Graphic Design</p>
               </div>
             </div>
           </div>
@@ -277,7 +298,7 @@
     <div id="footer-placeholder"></div>
 
     <script>
-    const words = ['Mentor', 'Designer', 'Creator', 'Problem Solver'];
+    const words = ['Mentor', 'Designer', 'Creator', 'Problem Solver', 'Dog Lover', 'Gardener', 'Photographer'];
     let currentIndex = 0;
     const rotatingText = document.getElementById('rotating-text');
     
